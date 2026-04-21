@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <!-- 設定網頁的字元編碼為 UTF-8，避免中文亂碼 -->
+        <meta charset="utf-8" />
+        
+        <!-- 網頁標題（顯示在瀏覽器分頁上） -->
+        <title>登入範例</title>
+    </head>
+    <body>
+        <!-- 表單開始
+             method="post" 表示用 POST 方式傳送資料
+             action="2.login.php" 表示資料會送到這個 PHP 檔案處理 -->
+        <form method="post" action="2.login.php">
+            
+            <!-- 帳號輸入欄位 -->
+            帳號：<input type="text" name="id"><br />
+            
+            <!-- 密碼輸入欄位（輸入時會隱藏文字） -->
+            密碼：<input type="password" name="pwd"><p></p>
+            
+            <!-- 送出按鈕：將表單資料送出 -->
+            <input type="submit" value="登入">
+            
+            <!-- 重設按鈕：清除所有輸入內容 -->
+            <input type="reset" value="清除">
+            
+        </form>
+    </body>
+</html>
